@@ -1,37 +1,71 @@
 ## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/U0958043/789555/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style type="text/css">
+p{
+color:red;
+margin:5px
+;
+cursor:pointer
+;
+}
+p:hover{
+background: yellow
+;
+}
+.Chinaairline{
+position:fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 10;
+background: rgba(0,0,0,0.5);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+                                      .fause{
+                                                         position:fixed;
+top:0;
+right: 0;
+width: 10%;
+height:10%;
+                                                         z-index: 10;
+display: flex;
+justify-content: right;
+align-items: right;
 
-### Markdown
+</style>
+</head>
+<body>
+<p>貓</p>
+<h1>可愛的貓</h1>
+<div class="cat">
+<img src="https://pic48.photophoto.cn/20180818/0005018687295527_b.jpg">
+</div> 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+                   <div class="fause">
+                  <img src="https://img.tukuppt.com/png_preview/00/05/87/Vw6Lm2JX7Z.jpg!/fw/780" width="100" height="100" >
+                  </div>
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/U0958043/789555/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<script type="text/javascript"> 
+$('p').click(function(){
+$('.cat').slideToggle();
+                                                         $('.fause').slideToggle();
+                                                     
+});
+$('.fause').click(function(){
+$('.fause').slideToggle();
+                                                         $('.cat').slideToggle();
+});
+</script>
+</body>
+</html>
